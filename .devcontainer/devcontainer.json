@@ -1,6 +1,6 @@
 {
     "name": "rust-php-env",
-    "build": { "dockerfile": "Dockerfile" },
+    "build": { "dockerfile": "../Dockerfile" },
     "customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
