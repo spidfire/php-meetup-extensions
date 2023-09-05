@@ -13,7 +13,7 @@ function json_aggregate_count_occurrences_php($filename, $key) {
     return $results;
 }
 
-$testfile = __DIR__ . "/../fake_log.jsonl";
+$testfile = __DIR__ . "/../fake_log_10m.jsonl";
 
 $start = microtime(true);
 $results = json_aggregate_count_occurrences($testfile, "severity");
