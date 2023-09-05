@@ -1,0 +1,15 @@
+{
+    "name": "rust-php-env",
+    "build": { "dockerfile": "Dockerfile" },
+    "customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"streetsidesoftware.code-spell-checker",
+                "rust-lang.rust-analyzer",
+                "bmewburn.vscode-intelephense-client"
+			]
+		}
+	}
+}
