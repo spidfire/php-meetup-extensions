@@ -7,7 +7,10 @@ $bench = microtime(true);
 
 
 $photo = new ImageResize(__DIR__ . '/../shepherd.jpg');
-$photo->crop(200, 200);
+
+$aspectRatio = $photo->x / $photo->y;
+$photo->crop((int) (200*$aspectRatio), 200);
+
 $photo->save(__DIR__ . '/../shepherd-cropped.jpg');
 
 
